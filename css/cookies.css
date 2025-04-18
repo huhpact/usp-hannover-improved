@@ -1,108 +1,126 @@
 :root {
-	--headcolor: #71835f;
-	--primary-color: #FED16E;
-	--background-color: #f9f9f9;
-	--text-color: #32373C;
-	--header-background: #333333;
-	--highlight-background: #F3F4F6;
-	--accent-color: #FED16E;
-	--gradient-start: #71835f;
-	--gradient-end: #8fa077;
-	--card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-	--transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	--color-primary: #71835F;
+	--color-primary-light: #899e75;
+	--color-primary-dark: #5a694c;
+	--color-accent: #FED16E;
+	--color-accent-light: #fee59b;
+	--color-accent-dark: #e9b43d;
+	--color-bg: #f7f9f4;
+	--color-bg-alt: #ffffff;
+	--color-text: #333333;
+	--color-text-light: #666666;
+	--color-text-dark: #222222;
+	--color-border: rgba(0, 0, 0, 0.1);
 }
 
-.modern__scroll__top {
+.cookie__banner {
 	position: fixed;
-	bottom: 30px;
-	right: 30px;
-	width: 50px;
-	height: 50px;
-	background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	cursor: pointer;
-	opacity: 0;
-	transform: translateY(100px);
-	transition: var(--transition-smooth);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--color-bg-alt);
+	padding: 2rem;
+	box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+	transform: translateY(100%);
+	transition: transform 0.3s ease-in-out;
+	z-index: 1000;
+	border-top: 1px solid var(--color-border);
 }
 
-.modern__scroll__top.show {
-	opacity: 1;
+.cookie__banner.show {
 	transform: translateY(0);
 }
 
-.modern__scroll__top:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.modern__banner {
-	position: fixed;
-	bottom: -100%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 90%;
-	max-width: 600px;
-	background: rgba(255, 255, 255, 0.98);
-	backdrop-filter: blur(10px);
-	border-radius: 20px;
-	padding: 30px;
-	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-	z-index: 9999;
-	transition: var(--transition-smooth);
-}
-
-.modern__banner.show {
-	bottom: 20px;
-}
-
 .cookie__content {
-	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.cookie__content h3 {
-	color: var(--headcolor);
+.cookie__text {
+	margin-bottom: 2rem;
+}
+
+.cookie__text h2 {
+	color: var(--color-text-dark);
+	margin: 0 0 1rem 0;
 	font-size: 1.5rem;
-	margin-bottom: 15px;
 }
 
-.cookie__content p {
-	color: var(--text-color);
-	margin-bottom: 25px;
+.cookie__text p {
+	color: var(--color-text-light);
 	line-height: 1.6;
+	margin: 0;
 }
 
 .cookie__buttons {
 	display: flex;
-	justify-content: center;
-	gap: 15px;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
-.cookie__btn {
-	padding: 12px 25px;
+.cookie__button {
+	padding: 0.75rem 1.5rem;
 	border: none;
-	border-radius: 8px;
+	border-radius: 6px;
 	font-weight: 600;
 	cursor: pointer;
-	transition: var(--transition-smooth);
+	transition: all 0.2s ease;
 }
 
-.cookie__btn.accept {
-	background: var(--headcolor);
+.cookie__button.primary {
+	background-color: var(--color-primary);
 	color: white;
 }
 
-.cookie__btn.decline {
-	background: var(--accent-color);
-	color: var(--text-color);
+.cookie__button.primary:hover {
+	background-color: var(--color-primary-dark);
+	transform: translateY(-1px);
 }
 
-.cookie__btn:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.cookie__button.secondary {
+	background-color: var(--color-accent);
+	color: var(--color-text-dark);
+}
+
+.cookie__button.secondary:hover {
+	background-color: var(--color-accent-dark);
+	transform: translateY(-1px);
+}
+
+.cookie__options {
+	display: none;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: 1px solid var(--color-border);
+}
+
+.cookie__options.show {
+	display: block;
+}
+
+.cookie__option {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1.5rem;
+	gap: 1rem;
+}
+
+.cookie__option input[type="checkbox"] {
+	margin-top: 0.25rem;
+}
+
+.cookie__option label {
+	flex: 1;
+}
+
+.cookie__option strong {
+	display: block;
+	color: var(--color-text-dark);
+	margin-bottom: 0.5rem;
+}
+
+.cookie__option p {
+	color: var(--color-text-light);
+	margin: 0;
+	font-size: 0.95rem;
 }

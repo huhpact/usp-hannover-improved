@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="de-DE">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USP Hannover - Kontakt</title>
     <meta name="description" content="Kontaktieren Sie USP Hannover für Unterstützung bei Bürokratie, Fachkräftemangel, Digitalisierung und mehr.">
     <meta name="keywords" content="USP Hannover, Kontakt, Unternehmensberatung, Bürokratie, Fachkräftemangel, Digitalisierung">
     <meta name="author" content="USP Hannover">
     <meta name="robots" content="index, follow">
     <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/images/usp-hannover8317611.jpg" type="image/x-icon">
+    <link rel="icon" href="/images/logo-usp-hannover-cut.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/contact.css">
-    <script src="/js/footer.js"></script>
-    <script src="/js/header.js"></script>
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/selection.css">
+    <link rel="stylesheet" href="/css/transition.css">
+    <link rel="stylesheet" href="/css/cookies.css">
+    <link rel="stylesheet" href="/css/back-to-top.css">
 </head>
 <body>
-    <header class="glass__header">
-        <nav class="header__nav">
-          <div class="logo">
-            <a href="index.html" class="logo__link">
-              <img class="height__100" src="/images/logo-usp-hannover-cut.png" alt="USP Hannover Logo">
-            </a>
+    <div class="page__transition"></div>
+
+    <header class="main__header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="logo">
+              <a href="index.html">
+                <img src="/images/logo-usp-hannover-cut.png" alt="USP Hannover Logo" class="logo__img">
+                <span class="logo__text">USP Hannover</span>
+              </a>
+            </div>
+            
+            <nav class="main__nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Leistungen</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">Über Uns</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link active">Kontakt</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+              </ul>
+            </nav>
+            
+            <div class="header__actions">
+              <a href="tel:051138820364" class="phone__link">
+                <i class="bx bx-phone-call"></i>
+                <span>0511 388 20364</span>
+              </a>
+              <button class="menu__toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
-      
-          <div class="nav__links">
-            <a href="index.html" class="nav__link">Home</a>
-            <a href="services.html" class="nav__link">Leistungen</a>
-            <a href="about.html" class="nav__link">Über Uns</a>
-            <a href="contact.html" class="nav__link active">Kontakt</a>
-            <a href="blog.html" class="nav__link">Blog</a>
-          </div>
-      
-          <div class="nav__cta">
-            <a href="tel:051138820364" class="cta__button">
-              <i class='bx bx-phone-call'></i>
+        </div>
+      </header>
+    
+      <div class="mobile__menu">
+        <div class="container">
+          <ul class="mobile__nav__list">
+            <li class="mobile__nav__item"><a href="index.html" class="mobile__nav__link">Home</a></li>
+            <li class="mobile__nav__item"><a href="services.html" class="mobile__nav__link">Leistungen</a></li>
+            <li class="mobile__nav__item"><a href="about.html" class="mobile__nav__link">Über Uns</a></li>
+            <li class="mobile__nav__item"><a href="contact.html" class="mobile__nav__link">Kontakt</a></li>
+            <li class="mobile__nav__item"><a href="#" class="mobile__nav__link">Blog</a></li>
+          </ul>
+          <div class="mobile__contact">
+            <a href="tel:051138820364" class="mobile__phone__link">
+              <i class="bx bx-phone-call"></i>
               <span>0511 388 20364</span>
             </a>
           </div>
-        </nav>
-      </header>
+        </div>
+      </div>
 
     <main>
         <section id="contact__us" class="reveal__section">
@@ -48,7 +80,7 @@
 
             <div class="contact__section reveal__item">
                 <div class="contact__image hover__zoom">
-                    <img src="/images/usp-hannover38721.png" alt="Julia Chappuzeau">
+                    <img src="/images/usp-hannover-julia-chappuzeau.png" alt="Julia Chappuzeau">
                     <div class="image__overlay">
                         <div class="overlay__content">
                             <h3>Julia Chappuzeau</h3>
@@ -88,7 +120,7 @@
                     <p class="animated__text">...Oder Stellen Sie uns gerne Ihre Fragen, wo wir Ihnen helfen können.</p>
                 </div>
                 <div class="contact__image hover__zoom">
-                    <img src="/images/usp-hannover328725189.png" alt="Carsten Klingebiel">
+                    <img src="/images/usp-hannover-carsten-klingebiel.png" alt="Carsten Klingebiel">
                     <div class="image__overlay">
                         <div class="overlay__content">
                             <h3>Carsten Klingebiel</h3>
@@ -123,21 +155,15 @@
         </section>
     </main>
 
-    <div id="cookie__banner" class="modern__banner">
-        <div class="cookie__content">
-            <h3>Wir verwenden Cookies!</h3>
-            <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Einige Cookies sind erforderlich, um die grundlegenden Funktionen zu gewährleisten, während andere uns helfen, die Nutzung unserer Seite zu analysieren und Ihnen personalisierte Inhalte sowie relevante Werbung anzuzeigen. Sie können alle Cookies akzeptieren oder ablehnen.</p>
-            <div class="cookie__buttons">
-                <button id="accept__cookies" class="cookie__btn accept">Akzeptieren</button>
-                <button id="decline__cookies" class="cookie__btn decline">Ablehnen</button>
-            </div>
-        </div>
-    </div>
+    <button id="backToTop" class="back__to__top" aria-label="Back to top">
+        <i class="bx bx-chevron-up"></i>
+      </button>
 
-    <div id="backToTop" class="modern__scroll__top">
-        <i class='bx bx-chevron-up'></i>
-    </div>
 
+    <script src="/js/header.js"></script>
     <script src="/js/contact.js"></script>
+    <script src="/js/back-to-top.js"></script>
+    <script src="/js/cookies.js"></script>
+    <script src="/js/footer.js"></script>
 </body>
 </html>

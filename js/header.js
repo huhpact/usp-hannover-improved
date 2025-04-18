@@ -1,20 +1,46 @@
-const header = document.querySelector('.glass__header');
-	let lastScroll = 0;
+document.addEventListener("DOMContentLoaded", function() {
+  
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      pageLoader.classList.add('hide');
 
-	window.addEventListener('scroll', () => {
-			const currentScroll = window.pageYOffset;
+      initAnimations();
+    }, 800);
+  });
+
+  const header = document.querySelector('.main__header');
+  
+  function handleHeaderScroll() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+
 	
-			if (currentScroll > 50) {
-					header.classList.add('scrolled');
-			} else {
-					header.classList.remove('scrolled');
-			}
+  
+  window.addEventListener('scroll', handleHeaderScroll);
+  handleHeaderScroll(); 
 
-			if (currentScroll > lastScroll && currentScroll > 100) {
-					header.style.transform = 'translateY(-100%)';
-			} else {
-					header.style.transform = 'translateY(0)';
-			}
-			
-			lastScroll = currentScroll;
-	});
+  const menuToggle = document.querySelector('.menu__toggle');
+  const mobileMenu = document.querySelector('.mobile__menu');
+  const bodyElement = document.body;
+  
+  menuToggle.addEventListener('click', function() {
+    menuToggle.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    bodyElement.classList.toggle('menu-open');
+  });
+
+  const mobileLinks = document.querySelectorAll('.mobile__nav__link');
+  
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      menuToggle.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      bodyElement.classList.remove('menu-open');
+    });
+  });
+
+});

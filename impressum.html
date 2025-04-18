@@ -5,37 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo-usp-hannover-cut.png" type="image/x-icon">
     <title>USP Hannover GmbH - Impressum</title>
     <link rel="stylesheet" href="/css/impressum.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/cookies.css">
+    <link rel="stylesheet" href="/css/selection.css">
+    <link rel="stylesheet" href="/css/back-to-top.css">
+    <link rel="stylesheet" href="/css/transition.css">
   </head>
   <body>
-    <header class="glass__header">
-      <nav class="header__nav">
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img class="height__100" src="/images/logo-usp-hannover-cut.png" alt="USP Hannover Logo">
-          </a>
+    <div class="page__transition"></div>
+
+    <header class="main__header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="logo">
+              <a href="index.html">
+                <img src="/images/logo-usp-hannover-cut.png" alt="USP Hannover Logo" class="logo__img">
+                <span class="logo__text">USP Hannover</span>
+              </a>
+            </div>
+            
+            <nav class="main__nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Leistungen</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">Über Uns</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Kontakt</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+              </ul>
+            </nav>
+            
+            <div class="header__actions">
+              <a href="tel:051138820364" class="phone__link">
+                <i class="bx bx-phone-call"></i>
+                <span>0511 388 20364</span>
+              </a>
+              <button class="menu__toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
         </div>
+      </header>
     
-        <div class="nav__links">
-          <a href="index.html" class="nav__link">Home</a>
-          <a href="services.html" class="nav__link">Leistungen</a>
-          <a href="about.html" class="nav__link">Über Uns</a>
-          <a href="contact.html" class="nav__link">Kontakt</a>
-          <a href="blog.html" class="nav__link">Blog</a>
+      <div class="mobile__menu">
+        <div class="container">
+          <ul class="mobile__nav__list">
+            <li class="mobile__nav-item"><a href="index.html" class="mobile__nav__link">Home</a></li>
+            <li class="mobile__nav__item"><a href="services.html" class="mobile__nav__link">Leistungen</a></li>
+            <li class="mobile__nav__item"><a href="about.html" class="mobile__nav__link">Über Uns</a></li>
+            <li class="mobile__nav__item"><a href="contact.html" class="mobile__nav__link">Kontakt</a></li>
+            <li class="mobile__nav__item"><a href="#" class="mobile__nav__link">Blog</a></li>
+          </ul>
+          <div class="mobile__contact">
+            <a href="tel:051138820364" class="mobile__phone__link">
+              <i class="bx bx-phone-call"></i>
+              <span>0511 388 20364</span>
+            </a>
+          </div>
         </div>
-    
-        <div class="nav__cta">
-          <a href="tel:051138820364" class="cta__button">
-            <i class='bx bx-phone-call'></i>
-            <span>0511 388 20364</span>
-          </a>
-        </div>
-      </nav>
-    </header>
+      </div>
     
     
 
@@ -145,24 +179,15 @@
       </div>
     </main>
 
-    <div id="cookie__banner" class="modern__banner">
-      <div class="cookie__content">
-          <h3>Wir verwenden Cookies!</h3>
-          <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Einige Cookies sind erforderlich, um die grundlegenden Funktionen zu gewährleisten, während andere uns helfen, die Nutzung unserer Seite zu analysieren und Ihnen personalisierte Inhalte sowie relevante Werbung anzuzeigen. Sie können alle Cookies akzeptieren oder ablehnen.</p>
-          <div class="cookie__buttons">
-              <button id="accept__cookies" class="cookie__btn accept">Akzeptieren</button>
-              <button id="decline__cookies" class="cookie__btn decline">Ablehnen</button>
-          </div>
-      </div>
-  </div>
-
-  <div id="backToTop" class="modern__scroll__top">
-      <i class='bx bx-chevron-up'></i>
-  </div>
+  <button id="backToTop" class="back__to__top" aria-label="Back to top">
+    <i class="bx bx-chevron-up"></i>
+  </button>
 
     <script type="module" src="/js/impressum.js"></script>
     <script src="/js/footer.js"></script>
     <script src="/js/header.js"></script>
     <script src="/js/cookies.js"></script>
+    <script src="/js/back-to-top.js"></script>
+    <script src="/js/transition.js"></script>
   </body>
 </html>
