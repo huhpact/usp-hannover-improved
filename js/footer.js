@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="footer__section">
                     <h3>Über Uns</h3>
                     <ul>
-                        <li><a href="about.html">Unternehmen</a></li>
-                        <li><a href="team.html">Team</a></li>
+                        <li><a href="index.html">Unternehmen</a></li>
+                        <li><a href="about.html">Team</a></li>
                         <li><a href="careers.html">Karriere</a></li>
                         <li><a href="news.html">Aktuelles</a></li>
                     </ul>
