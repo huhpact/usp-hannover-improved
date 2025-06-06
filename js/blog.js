@@ -3,7 +3,7 @@ const blogPosts = {
   1: {
     title: "Strategieberatung",
     category: "Definition",
-    date: "15. Dezember 2024",
+    date: "04. Mai 2025",
     image: "/images/blog3.jpg",
     content: `
       <h3>Was ist Strategieberatung?</h3>
@@ -31,7 +31,7 @@ const blogPosts = {
   2: {
     title: "Change Management",
     category: "Definition", 
-    date: "10. Dezember 2024",
+    date: "04. Mai 2025",
     image: "/images/blog2.jpg",
     content: `
       <h3>Was bedeutet Change Management?</h3>
@@ -66,7 +66,7 @@ const blogPosts = {
   3: {
     title: "Prozessoptimierung", 
     category: "Definition",
-    date: "5. Dezember 2024",
+    date: "04. Mai 2025",
     image: "/images/blog1.jpg",
     content: `
       <h3>Definition Prozessoptimierung</h3>
